@@ -8,6 +8,8 @@ First project as part of the Udacity RL-course
 
 For this project, student have to train an agent to navigate (and collect bananas!) in a large, square world. This is a custom Unity environment, created especially for Udacity course. More information here: ![Link]
 
+![Image](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/imgs/environment_sample.png)
+
 A **reward** of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana. Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.
 
 The **state space** has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around the agent's forward direction. Given this information, the agent has to learn how to best select actions. 
@@ -28,15 +30,15 @@ As part of solving the problem, it was required to create an agent based on shal
 
 For solving this problem, the following algorithms were implemented:
 
-* Vanilla DQN [application](https://www.google.com), [model file](https://www.google.com); 
+* Vanilla DQN [notebook](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/Vanilla%20DQN/Navigation%20Vanilla-DQN.ipynb)
 
-* Double DQN; 
+* Double DQN; [notebook](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/Double%20DQN/Navigation-DDQN.ipynb)
 
-* Dueling Neural Network; 
+* Dueling Neural Network;  [notebook](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/Dueling%20Neural%20Network/Navigation%20Dueling-DQN.ipynb)
 
-* Prioritized Experience Replay; 
+* Prioritized Experience Replay; [notebook](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/Prioritized%20Experience%20Replay/Navigation%20Prioritized%20Experience%20Replay.ipynb)
 
-* Noisy DQN:
+* Noisy DQN: [notebook](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/Noisy%20DQN/Navigation-Noisy-DQN.ipynb)
 
 
 ## A little research
