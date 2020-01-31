@@ -59,7 +59,7 @@ To create visual pretty graphics, 2 hints were used:
 ![Image](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/imgs/vanilla_eps.png)
 
 3 value ranges for Eps were explored: 1-0.01, 1-0.5, 0.5-0.01. 
-The *equally probable initial value* of Eps (Eps=0.5) allows to achieve faster convergence. It is very important to greatly *reduce the value at the end of the training*, otherwise the optimal solution will not be achieved .
+The **equally probable initial value** of Eps (Eps=0.5) allows to achieve faster convergence. It is very important to greatly **reduce the value at the end of the training**, otherwise the optimal solution will not be achieved .
 
 
 * **Double DQN:**
@@ -69,7 +69,7 @@ The *equally probable initial value* of Eps (Eps=0.5) allows to achieve faster c
 ![Image](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/imgs/ddqn_tau.png)
 
 3 values for Tau were explored: 4, 16, 32.
-Comparing the results with the classical algorithm (the _green graph_ in the image of the previous section: all the double-networks in current section had the eps parameter ranged at [1-0.01]), a significant acceleration of convergence is observed for small time lag (Tau=4). The optimal solution will *not* be be achieved in case of using a *large time lag*.
+Comparing the results with the classical algorithm (the _green graph_ in the image of the previous section: all the double-networks in current section had the eps parameter ranged at [1-0.01]), a **significant acceleration** of convergence is observed for small time lag (Tau=4). The optimal solution will **not** be be achieved in case of using a **big time lag**.
 
 
 * **Dueling Neural Network:**
@@ -78,7 +78,7 @@ Comparing the results with the classical algorithm (the _green graph_ in the ima
 
 ![Image](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/imgs/duel_hidden.png)
 
-*No significant difference* is observed when using additional hidden layers at separated streams.
+**No significant difference** is observed when using additional hidden layers at separated streams.
 
 
 * **Prioritized Experience Replay**:
@@ -88,7 +88,7 @@ Comparing the results with the classical algorithm (the _green graph_ in the ima
 ![Image](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/imgs/per_beta.png)
 
 3 value ranges for Beta were explored: 0.1-1, 0.5-1, 0.8-1. 
-An arbitrary initial beta value leads to convergence of the algorithm. A *larger initial value* provides faster convergence.
+An arbitrary initial beta value leads to convergence of the algorithm. A **larger initial value** provides faster convergence.
 
 
 * **Noisy DQN**:
@@ -98,4 +98,4 @@ An arbitrary initial beta value leads to convergence of the algorithm. A *larger
 ![Image](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/imgs/noisy_eps.png)
 
 3 values for Tau were explored: 0.0017, 0.017, 0.17.
-Comparing the noisy-network's result with all other algorithms, the longest training procedure is observed.The optimal solution will *not* be achieved in case of using a *big amplitude of noise*.
+Comparing the noisy-network's result with all other algorithms, the longest training procedure is observed.The optimal solution will **not** be achieved in case of using a **big amplitude of noise**.
