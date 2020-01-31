@@ -45,11 +45,17 @@ For solving this problem, the following algorithms were implemented:
 
 Despite the Atari results demonstrated at publications in the arxiv, it was interesting to know how various parameters will affect the training process of the agent in our current environment.
 
-For each algorithm, the dependence of the duration of training on the its specific parameter, was explored:
+For each algorithm, the dependence of the duration of training on the its specific parameter, was explored. Since the score during learning process depends on several random factors, for each pair algorithm-parameter 3 neural networks was trained with the same set of parameters.
+
+To create visual pretty graphics, 2 hints were used:
+1) Smoothing with a moving average (window width 20) of the result in consecutive games (because original plots were noisy);
+2) To show the variability, the minimum and maximum scores were selected for current episode number, which form a wide band (filled by color). The dashed line inside shows the median value for current episode number.
 
 * Vanilla DQN: 
 
-*Eps* - probability of random action instead of learning-based action;
+*Eps* - probability of random action instead of learning-based action, this value decay for each episode. 
+3 value ranges for Eps were explored: 1-0.01, 1-0.5, 0.5-0.01. As pic shows below equally probable initial value of Eps  (Eps=0.5) allows to achieve faster convergence
+![Image](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/imgs/vanilla_eps.png)
 
 * Double DQN: 
 
