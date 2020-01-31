@@ -51,7 +51,7 @@ To create visual pretty graphics, 2 hints were used:
 1) Smoothing with a moving average (window width 20) of the result in consecutive games (because original plots were noisy);
 2) To show the variability, the minimum and maximum scores were selected for current episode number, which form a wide band (filled by color). The dashed line inside shows the median value for current episode number.
 
---
+
 * **Vanilla DQN:** 
 
 *Eps* - probability of random action instead of learning-based action, this value decay for each episode. 
@@ -61,7 +61,7 @@ To create visual pretty graphics, 2 hints were used:
 3 value ranges for Eps were explored: 1-0.01, 1-0.5, 0.5-0.01. 
 The *equally probable initial value* of Eps (Eps=0.5) allows to achieve faster convergence. It is very important to greatly *reduce the value at the end of the training*, otherwise the optimal solution will not be achieved .
 
---
+
 * **Double DQN:**
 
 *Tau* - how many trials\acts does the agent have between updating the weights of the target neural network;
@@ -71,7 +71,7 @@ The *equally probable initial value* of Eps (Eps=0.5) allows to achieve faster c
 3 values for Tau were explored: 4, 16, 32.
 Comparing the results with the classical algorithm (the _green graph_ in the image of the previous section: all the double-networks in current section had the eps parameter ranged at [1-0.01]), a significant acceleration of convergence is observed for small time lag (Tau=4). The optimal solution will *not* be be achieved in case of using a *large time lag*.
 
---
+
 * **Dueling Neural Network:**
 
 *Hidden layers* - are there additional hidden layer of a non-neural network in separated streams: advantage (A) and state value (V);
@@ -80,7 +80,7 @@ Comparing the results with the classical algorithm (the _green graph_ in the ima
 
 *No significant difference* is observed when using additional hidden layers at separated streams.
 
---
+
 * **Prioritized Experience Replay**:
 
 *Beta* - a schedule on the exponent  for annealing the amount of importance-sampling correction over time;
@@ -90,7 +90,7 @@ Comparing the results with the classical algorithm (the _green graph_ in the ima
 3 value ranges for Beta were explored: 0.1-1, 0.5-1, 0.8-1. 
 An arbitrary initial beta value leads to convergence of the algorithm. A *larger initial value* provides faster convergence.
 
---
+
 * **Noisy DQN**:
 
 *Sigma* - a standard deviation of distribution of noise implementing at each agent's act.
