@@ -6,7 +6,7 @@ First project as part of the Udacity RL-course
 ## The Environment
 
 
-For this project, student have to train an agent to navigate (and collect bananas!) in a large, square world. This is a custom Unity environment, created especially for Udacity course. More information about environment here: ![Link](https://github.com/jknthn/unity-banana-navigation)
+For this project, student have to train an agent to navigate (and collect bananas!) in a large, square world. This is a custom Unity environment, created especially for Udacity course. More information about environment [here](https://github.com/jknthn/unity-banana-navigation)
 
 ![Image](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/imgs/environment_sample.png)
 
