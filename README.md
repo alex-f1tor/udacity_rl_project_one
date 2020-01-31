@@ -22,12 +22,12 @@ Four discrete **actions** are available, corresponding to:
 `3` - turn right.
 
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
-**
+---
 The following python3 libraries are required:
 `numpy == 1.16.2`
 `pytorch == 0.4.0` - (GPU enabled)
 `unity ML-agent` - available at [github](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md)
-
+---
 
 
 ## DQN algorithims
