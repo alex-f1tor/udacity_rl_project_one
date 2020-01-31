@@ -6,7 +6,7 @@ First project as part of the Udacity RL-course
 ## The Environment
 
 
-For this project, student have to train an agent to navigate (and collect bananas!) in a large, square world. This is a custom Unity environment, created especially for Udacity course. More information here: ![Link]
+For this project, student have to train an agent to navigate (and collect bananas!) in a large, square world. This is a custom Unity environment, created especially for Udacity course. More information about environment here: ![Link](https://github.com/jknthn/unity-banana-navigation)
 
 ![Image](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/imgs/environment_sample.png)
 
@@ -69,7 +69,7 @@ The **equally probable initial value** of Eps (Eps=0.5) allows to achieve faster
 ![Image](https://github.com/alex-f1tor/udacity_rl_project_one/blob/master/imgs/ddqn_tau.png)
 
 3 values for Tau were explored: 4, 16, 32.
-Comparing the results with the classical algorithm (the _green graph_ in the image of the previous section: all the double-networks in current section had the eps parameter ranged at [1-0.01]), a **significant acceleration** of convergence is observed for small time lag (Tau=4). The optimal solution will **not** be be achieved in case of using a **big time lag**.
+Comparing the results with the classical algorithm (the _green graph_ in the image of the previous section: all the double-networks in current section had the eps parameter ranged at [1-0.01]), a **significant acceleration** of convergence is observed for small time lag (Tau=4). The optimal solution will **not** be achieved in case of using a **big time lag**.
 
 
 * **Dueling Neural Network:**
